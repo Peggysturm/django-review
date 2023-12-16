@@ -15,3 +15,5 @@ __pycache__/
 media/photos/*.jpg
 !media/background
 !media/profile_picture
+
+kartinki
