@@ -1,6 +1,6 @@
 Парсинг сайта на python с использованием фреймворка Django. На сайте выводятся карточки товара. При нажатии на товар, можно перейти к его подробному описанию. Как бд использовалась sqlite3.
 При запуске программы Вас встретит вот такая страничка.
-([image.png](https://github.com/Peggysturm/django-review/blob/dev/kartinki/image.png))
+(https://github.com/Peggysturm/django-review/blob/dev/kartinki/image.png)
 Чтобы этого избежать, в адресе нужно поставить / и написать номер страницы
 Было: (image-1.png)
 Стало: (image-2.png)
