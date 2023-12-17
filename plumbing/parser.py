@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from ..for_db.plumbing.models import Plumbing, PlumbingDetails
+from plumbing.models import Plumbing, PlumbingDetails
 from django.template.defaultfilters import slugify
 
 

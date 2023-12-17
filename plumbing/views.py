@@ -3,7 +3,8 @@ from django.db.models.query import QuerySet
 from django.shortcuts import render
 from django.views.generic import ListView, TemplateView, DetailView
 from .models import Plumbing
-from for_parser.parser import parser
+from .parser import parser
+from django.shortcuts import redirect
 
 class MainPageView(ListView):
     template_name = "index.html"
@@ -41,3 +42,7 @@ class DetailView(DetailView):
     template_name = "plumbing_detail.html"
     slug_url_kwarg = 'product_slug'
     context_object_name = 'product'
+
+def home_redirect(request):
+    response = redirect('/1')
+    return response

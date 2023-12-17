@@ -8,7 +8,6 @@ COPY . .
 
 RUN pip install --no-cache -r requirements.txt
 
-#ENV PYTHONUNBUFFERED=1
 EXPOSE 8000
 
 CMD python3 manage.py makemigrations && \

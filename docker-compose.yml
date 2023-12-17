@@ -3,12 +3,6 @@ version: '3'
 services: 
     backend_django:
         build:
-            ./for_db
+            .
         ports:
             - "8000:8000"
-        depends_on:
-            - parser
-    parser:
-        build: ./for_parser
-        ports:
-            - "8888:8888"
