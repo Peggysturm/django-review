@@ -19,3 +19,4 @@ class Plumbing(models.Model):
 class PlumbingDetails(models.Model):
     plumbing = models.OneToOneField(Plumbing, on_delete=models.CASCADE, verbose_name="Детели", related_name="details",null=True)
     description = models.TextField()
+    raiting = models.IntegerField(null=True)

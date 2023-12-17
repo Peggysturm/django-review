@@ -3,7 +3,8 @@
 {% block content %}
 <div class="card_item">
     <h1>{{product.name}}</h1>
-        <p>{{product.price}}</p>
+        <p>Цена:{{product.price}}</p>
         <p>{{product.details.description}}</p>
+        <p>Кол-во оценок:{{product.details.raiting}}</p>
 </div>
 {% endblock %}

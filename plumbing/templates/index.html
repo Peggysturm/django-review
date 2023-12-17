@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <form class="filter" action="{% url 'home' 1%}" method="GET">
+        <select id="date-sort" name="sort">
+            <option value="">Сортировать по кол-ву оценок</option>
+            <option value="many" {% if request.GET.sort == 'many' %} selected {% endif %}>Сначала много</option>
+            <option value="little" {% if request.GET.sort == 'little' %} selected {% endif %}>Сначала мало</option>
+        </select>
+        <button class="apply-filters" type="submit">Применить</button>
+    </form>
+
     <div class="wrapper">
     {% for product in products %}
     <a href="{% url 'product' product.slug %}", class="product_card">
         <div>
             <h3>{{ product.name }}</h3>
             <p>Цена: {{ product.price }}</p>
+            <p>Оценки: {{product.details.raiting}}</p>
         </div>
     </a>
     {% endfor %}
